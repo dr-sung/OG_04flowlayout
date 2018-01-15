@@ -1,4 +1,5 @@
 
+import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -28,7 +29,7 @@ public class FlowLayoutTester extends JFrame {
         // Composite: JPanel
         // Leaf: JButton
         JPanel panel = new JPanel(); // JPanel's default layout manager: FlowLayout
-        contentPane.add(panel, "South");
+        contentPane.add(panel, BorderLayout.SOUTH);
         panel.add(upButton); // use preferred size
         panel.add(downButton); // use preferred size
     }
